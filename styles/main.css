@@ -1,0 +1,8 @@
+body {
+    background-color: aqua;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+}

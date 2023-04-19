@@ -16,7 +16,7 @@ for (const fish of allFish) {
     Use . for elements with a "class" attribute
     Use # for elements with an "id" attribute
  */
-const parentHTMLElement = document.querySelector(".testrun")
+const parentHTMLElement = document.querySelector(".fish-collection")
 
 
 parentHTMLElement.innerHTML = FishList()
