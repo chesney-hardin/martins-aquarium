@@ -73,9 +73,75 @@ const database = {
             diet: "zooplankton",
             image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.6lh2MOuybXvq34u8JGyCmQHaE7%26pid%3DApi&f=1&ipt=b9d3f8ea4bf5e6dfcd34c75aa7140db2c40c40200e6bb11e54c1d895f8b59725&ipo=images"
         }
+    ],
+    tips: [
+        {   
+            id: 1,
+            type: "Cold Freshwater",
+            salinity: 5,
+            temperature: 55,
+            cleaning: "Refresh water every other month and scrub the glass. Add ice cubes if water gets above 65F."
+        },
+        {
+            id: 2,
+            type: "Warm Freshwater",
+            salinity: 10,
+            temperature: 80,
+            cleaning: "Refresh water monthly and clean glass weekly. Add warm water if water gets below 70F."
+            
+        },
+        {
+            id: 3,
+            type: "Saltwater",
+            salinity: 65,
+            temperature: 70,
+            cleaning: "Check salinity levels and adjust as needed. Change water 2-3 times per year."
+        },
+    ],
+    locations: [
+        {
+            id: 1,
+            country: "Panama",
+            bodyOfWater: "Caribbean",
+            typeOfWater: "saltwater",
+            yearAndMonth: "April 1995"
+        },
+        {
+            id: 2,
+            country: "Australia",
+            bodyOfWater: "Pacific Ocean",
+            typeOfWater: "saltwater",
+            yearAndMonth: "September 1989"
+        },
+        {
+            id: 3,
+            country: "USA",
+            bodyOfWater: "Lake Michigan",
+            typeOfWater: "freshwater",
+            yearAndMonth: "June 1999"
+        },
+        {
+            id: 4,
+            country: "Brazil",
+            bodyOfWater: "Amazon River",
+            typeOfWater: "freshwater",
+            yearAndMonth:"February 2002"
+        }
+
     ]
 }
 
 export const getFish = () => {
+    //The .map method creates a copy of the data so the original data is protected
     return database.fish.map(fish => ({ ...fish }))
+}
+
+export const getTips = () => {
+    //The .map method creates a copy of the data so the original data is protected
+    return database.tips.map(tips => ({ ...tips }))
+}
+
+export const getLocations = () => {
+    //The .map method creates a copy of the data so the original data is protected
+    return database.locations.map(locations => ({ ...locations }))
 }
