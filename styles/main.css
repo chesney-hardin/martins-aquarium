@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(9, 168, 149);
+    background-color: rgb(3, 124, 110);
 
 }
 
@@ -20,22 +20,28 @@ body {
 
 .page-title__header {
     color: rgb(245, 245, 245);
+    text-shadow: 1px 1px 1px rgb(22, 20, 20);
     font-size: 75px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
-    margin: 2px;
+    margin: 5px 0px 40px 0px;
 }
 
 .test-div {
     display: flex;
     flex-flow: row nowrap;
-    border: 5px dashed orange;
+
 }
 
 .main-body {
     color: rgb(245, 245, 245);
+    text-shadow: 1px 1px 1px rgb(22, 20, 20);
     display: flex;
     flex-direction: column;
     flex-basis: 75%;
+}
+
+.fish-collection__header {
+    margin: 20px;
 }
 
 .fish__image {
@@ -43,28 +49,61 @@ body {
     width: 200px;
     border: 1px solid white;
     border-radius: 10px;
-    
+
 }
 
 .fishList {
     color: rgb(245, 245, 245);
-    border: 5px dashed yellow;
+    text-shadow: 1px 1px 1px rgb(22, 20, 20);
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+}
+
+.fishCard {
+    margin: 10px;
+}
+
+.locations {
+    margin: 10px;
+}
+
+.locations__quotes {
+    display: flex;
+    flex-flow: center wrap;
+}
+
+.quote {
+    border: 3px solid aquamarine;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.locations__header {
+    text-align: center;
+}
+
+.locationsList {
     display: flex;
     flex-flow: row wrap;
 }
 
-.fishCard {
-    border: 5px dashed blue;
-    margin: 10px;
+.locationObjectCard {
+    margin: 20px;
 }
 
 .care {
     color: rgb(245, 245, 245);
-    border: 5px dotted purple;
+    text-shadow: 1px 1px 1px rgb(22, 20, 20);
     padding: 10px;
     display: flex;
     flex-direction: column;
     flex-basis: 25%;
-    
-    
+
+
+}
+
+.tipObjectCard {
+    margin: 20px;
 }
